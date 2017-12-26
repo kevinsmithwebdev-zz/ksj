@@ -1,0 +1,17 @@
+.nav-brand-word {
+  display: inline-block; /* allow ::first-letter */
+  color: #666;
+}
+
+.nav-brand-word:not(:last-child)::first-letter {
+  color: #999;
+}
+
+.my-nav-link {
+  text-transform: uppercase;
+  color: #999 !important;
+}
+
+.my-nav-link:hover {
+  color: #ddd !important;
+}
