@@ -1,6 +1,9 @@
+.app-wrapper {
+  background-color: antiquewhite;
+}
 .app-main-area {
-  background-color: blue;
+  background-color: #ddd;
 }
 .app-calendar-area {
-  background-color: green;
+  background-color: #dfd;
 }

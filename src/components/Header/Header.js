@@ -1,10 +1,12 @@
 import React from 'react'
 
+import '../../common/styles.css'
+
 import NavBar from './NavBar/NavBar'
 const Header = () => (
   <div>
     <NavBar />
-    <h2>Kevin Smith - Jazz Guitar Performance and Lessons</h2>
+    <h1 className="mainTitle">Kevin Smith - Jazz Guitar Performance and Lessons</h1>
   </div>
 )
 
