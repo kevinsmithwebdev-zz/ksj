@@ -1,17 +1,37 @@
-.nav-brand-word {
-  display: inline-block; /* allow ::first-letter */
-  color: #666;
-}
+.navbar {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background: linear-gradient(to right, #830303, #5c0000);
+  border-radius: 3px;
+  height: 50px;
+  width: 100%; }
 
-.nav-brand-word:not(:last-child)::first-letter {
-  color: #999;
-}
+.navbar ul {
+  list-style-type: none;
+  margin: 0 0 0 20px;
+  padding: 0;
+  overflow: hidden; }
 
-.my-nav-link {
-  text-transform: uppercase;
-  color: #999 !important;
-}
+.navbar li {
+  float: left;
+  margin: 8px 3px; }
 
-.my-nav-link:hover {
-  color: #ddd !important;
-}
+.navLink {
+  transition: .4s ease;
+  display: block;
+  padding: 8px;
+  text-decoration: none;
+  color: #999; }
+
+.navLink:hover {
+  color: white;
+  border-bottom: 3px solid white; }
+
+.navLinkCur {
+  display: block;
+  padding: 8px;
+  text-decoration: none;
+  color: white; }
+
+.navLinkCur:hover {
+  color: white; }

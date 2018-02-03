@@ -1,18 +1,13 @@
 import React from 'react'
-const Bio = () => (
-  <div>
-    <h2>Bio</h2>
-    <h2>Bio</h2>
-    <h2>Bio</h2>
-    <h2>Bio</h2>
-    <h2>Bio</h2>
-    <h2>Bio</h2>
-    <h2>Bio</h2>
-    <h2>Bio</h2>
-    <h2>Bio</h2>
-    <h2>Bio</h2>
-    <h2>Bio</h2>
-  </div>
-)
+
+import './Bio.css'
+
+const Bio = () => {
+  return (
+    <div id='Bio'>
+      Welcome to Bio
+    </div>
+  )
+}
 
 export default Bio

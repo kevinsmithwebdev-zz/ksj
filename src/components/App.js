@@ -1,39 +1,45 @@
-import React, { Component } from 'react'
+import React from 'react'
 import { Route, Switch } from 'react-router-dom'
-import { Col, Grid, Row } from 'react-bootstrap'
-
-import Header from './Header/Header'
 
 import Home from './Home/Home'
+import Playing from './Playing/Playing'
+import Teaching from './Teaching/Teaching'
+import Blog from './Blog/Blog'
+import Extras from './Extras/Extras'
 import Bio from './Bio/Bio'
-import Media from './Media/Media'
+import Contact from './Contact/Contact'
+import NotFound from './NotFound/NotFound'
 
-import Calendar from './Calendar/Calendar'
+import Header from './Header/Header'
+import Footer from './Footer/Footer'
 
 import './App.css'
 
-class App extends Component {
-  render() {
-    return (
-      <div className="app-wrapper">
-        <Header />
-        <Grid>
-          <Row className="show-grid">
-            <Col className="app-main-area" xs={12} md={8}>
-              <Switch>
-                <Route exact path="/" component={Home} />
-                <Route path="/bio" component={Bio} />
-                <Route path="/media" component={Media} />
-              </Switch>
-            </Col>
-            <Col className="app-calendar-area" xs={6} md={4}>
-              <Calendar />
-            </Col>
-          </Row>
-        </Grid>
-      </div>
-    )
-  }
-}
+const App = () => (
+
+  <div className="main-wrapper">
+
+    <Header />
+
+    <div className='page'>
+      <Switch>
+        <Route exact path='/' component={Home} />
+        <Route exact path='/playing' component={Playing} />
+        <Route exact path='/teaching' component={Teaching} />
+        <Route exact path='/blog' component={Blog} />
+        <Route exact path='/extras' component={Extras} />
+        <Route exact path='/bio' component={Bio} />
+        <Route exact path='/contact' component={Contact} />
+
+        <Route exact path='*' component={NotFound} />
+      </Switch>
+
+    </div>
+
+    <Footer />
+
+  </div>
+)
+
 
 export default App

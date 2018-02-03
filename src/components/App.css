@@ -1,9 +1,24 @@
-.app-wrapper {
-  background-color: antiquewhite;
-}
-.app-main-area {
-  background-color: #ddd;
-}
-.app-calendar-area {
-  background-color: #dfd;
-}
+.main-wrapper {
+  max-width: 1200px;
+  margin: 5px auto;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column; }
+
+.page {
+  background-color: #eee;
+  flex: 1;
+  margin: 10px 0;
+  color: black;
+  border: 1px solid #cccccc;
+  padding: 20px;
+  border-radius: 3px;
+  min-height: 300px; }
+
+body {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  border: none;
+  font: normal 100%/normal Arial, Helvetica, sans-serif;
+  color: white; }
