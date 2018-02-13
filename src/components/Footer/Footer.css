@@ -1,12 +1,10 @@
 footer {
-  color: #999;
-  background: linear-gradient(to right, #830303, #5c0000);
+  color: #333;
+  background: linear-gradient(to left top, #ccc, #aaa);
   padding-top: 5px;
-  padding-bottom: 0;
   text-align: center;
-  height: 20px;
+  height: 150px;
   width: 100%;
-  margin: 0 auto;
-  margin-top: 10px;
   border-top-left-radius: 3px;
-  border-top-right-radius: 3px; }
+  border-top-right-radius: 3px;
+  border: 1px solid #aaa; }
